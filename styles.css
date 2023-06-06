@@ -222,3 +222,28 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
