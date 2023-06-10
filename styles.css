@@ -266,3 +266,17 @@ body {
     --main-blue: #45567d;
     --main-gray: #303841;
 }
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
