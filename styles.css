@@ -174,30 +174,6 @@ section {
     display: block;
 }
 
-.welcome-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    display: block;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
@@ -280,3 +256,4 @@ html {
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
