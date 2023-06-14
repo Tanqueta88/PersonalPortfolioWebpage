@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Axaj</title>
+</head>
+
+<script> //Codigo JS enbebido en el HTML, NO SE HACE ASI!!!, la buena practica es hacer un archivo JS y vincularlo. 
+
+    var peticionHttp;
+
+    function inicializar_XHR() {
+        if (window.XMLHttpRequest) {
+            console.log("este es un navegador moderno");
+            peticionHttp = new XMLHttpRequest();
+        }
+        else {
+            //navegador antiguio
+            console.log("este es un navegador antiguo");
+            peticionHttp = new ActiveXObject("Microsoft.XMLHTTP")
+        }
+    }
+
+    function realizarPeticion(url, metodo, funcionA){
+
+//Definimos una funcion de como se debera actuar, aqui estamos dicientdo que cuanto este cambiando de estados
+//la peticion http ajax, se llame a la funcion alojada en la variable "funcionA"
+peticionHttp.onreadystatechange = funcionA
+//open() y send() nos permiten realizar el requiest al BEND
+//open(METODO, UrLAdonde RealizarElRequuest, Bollean), el bolean si es true indica que sera una paticion asincronica
+    peticionHttp.open(metodo, url, true);
+    peticionHttp.send(null);
+}
+
+</script>
+
+
+<body>
+    <h1>Introduccion a Ajax</h1>
+</body>
+
+</html>
